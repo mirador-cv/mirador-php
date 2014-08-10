@@ -8,7 +8,7 @@ The module is available on Packagist, and can be installed with composer (in you
 
 ```json
 "require": {
-  "mirador-cv/mirador-php": "*"
+  "mirador/mirador": "*"
 }
 ```
 

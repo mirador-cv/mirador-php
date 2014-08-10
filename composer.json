@@ -1,5 +1,8 @@
 {
     "name": "mirador/mirador",
+    "type": "library",
+    "keywords": ["image moderation", "moderation", "sdk", "mirador"],
+    "homepage": "https://github.com/mirador-cv/mirador-php",
     "description": "Official Mirador PHP Client",
     "require": {
         "guzzlehttp/guzzle": "~4.0"
