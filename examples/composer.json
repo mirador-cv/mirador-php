@@ -1,0 +1,15 @@
+{
+    "name": "mirador-php/examples",
+    "description": "examples for mirador/mirador client",
+    "require": {
+        "mirador/mirador": ">=0.2",
+        "slim/slim": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Jacob",
+            "email": "nick@mirador.im"
+        }
+    ]
+}

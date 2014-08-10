@@ -38,6 +38,10 @@
      */
     public function __construct($apikey) {
 
+      if (empty($apikey)) {
+        throw new RequestException("api key required!");
+      }
+
       $this->apikey = $apikey;
       $this->http = new \GuzzleHttp\Client();
       $this->encoder = new ItemEncoder();
