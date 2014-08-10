@@ -1,0 +1,23 @@
+{
+    "name": "mirador/mirador",
+    "description": "Official Mirador PHP Client",
+    "require": {
+        "guzzlehttp/guzzle": "~4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Jacob",
+            "email": "nick@mirador.im"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "autoload": {
+      "psr-0": {
+        "Mirador\\API": "lib"
+      }
+    }
+}
