@@ -28,6 +28,11 @@ The module is available on Packagist, and can be installed with composer (in you
 
 ```
 
+## Examples
+
+To see some simple usage, check out our [examples](examples).
+
+
 ## Classifying Files
 
 The php client supports working with a number of data types:
