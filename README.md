@@ -203,7 +203,6 @@ There are a couple of requirements to be mindful of when classifying urls, they 
 
 * be publically-accessibly
 * have a correctly set mimetype (`image/*`)
-* respond/be retrievable in less than `mirador.MiradorClient.TIMEOUT` seconds
 * not require query paramters
 
 Given that, the interface for classifying urls is identical to that when using [classifyFiles](#classifyFiles)
@@ -240,7 +239,7 @@ var_dump($output->results['baby']);
 
 ```
 
-#### <a name='classifyUrl'></a> mirador.MiradorClient#classifyUrl
+#### <a name='classifyUrl'></a> \Mirador\API\Client#classifyUrl
 
 As with the other methods/data types, you can also classify a single url using the convenience method `classifyUrl`. This will return a \Mirador\API\Result object or throw a \Mirador\API\RequestException:
 
