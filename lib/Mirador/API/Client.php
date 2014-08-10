@@ -108,7 +108,7 @@
 
       if (method_exists($this, $mul)) {
 
-        $r = $this->$mul($args);
+        $r = call_user_func_array(array($this, $mul), $args);
 
         if (count($r->results) > 0) {
           return array_shift($r->results);

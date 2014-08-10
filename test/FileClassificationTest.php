@@ -25,6 +25,28 @@
 
     }
 
+    public function testFilesWithIds() {
+      $c = new Mirador\API\Client(API_KEY);
+
+      $r = $c->classifyFiles(array('nsfw' => NSFW_FILE, 'sfw' => SFW_FILE));
+
+      $this->assertObjectHasAttribute('results', $r);
+      $this->assertEquals(2, count($r->results));
+      $this->assertEquals('nsfw', $r->results['nsfw']->id);
+      $this->assertGreaterThanOrEqual(0.50, $r->results['nsfw']->value);
+    }
+
+    public function testFileWithId() {
+
+      $c = new Mirador\API\Client(API_KEY);
+
+      $r = $c->classifyFile(array('nsfw' => NSFW_FILE));
+
+      $this->assertEquals('nsfw', $r->id);
+      $this->assertGreaterThanOrEqual(0.50, $r->value);
+
+    }
+
     public function testFilesWithMockObj() {
 
       $c = new Mirador\API\Client(API_KEY);

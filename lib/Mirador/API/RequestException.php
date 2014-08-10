@@ -17,7 +17,15 @@
         return;
       }
 
-      $err = (object) $res->json();
+      try {
+        $err = (object) $res->json();
+      }
+
+      catch (\GuzzleHttp\Exception\ParseException $e) {
+
+        $err = (object) array('errors' => 'unexpected error');
+
+      }
 
       if (isset($err->errors) && $err->errors != NULL)
       {
